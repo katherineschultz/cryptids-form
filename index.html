@@ -61,28 +61,66 @@
     <br><br>
 </div>
 
-
+<div class="payform">
 <div class="container">
     <fieldset class="row">
         <legend class="col-sm-3">About You</legend>
         <div class="col-sm-9">
-            <input type="text" class="form-control" placeholder="Your Name">
-            <input type="text" class="form-control" placeholder="Your Name">
-            <input type="text" class="form-control" placeholder="Your Name">
+            <input type="text" class="form-control formcell" placeholder="Your Name" required>
+            <input type="text" class="form-control formcell" placeholder="Your Email Address" required>
+            <input type="text" class="form-control formcell" placeholder="Your Phone Number">
         </div>
     </fieldset>
+<br>
     <fieldset class="row">
         <legend class="col-sm-3">Accessories</legend>
         <div class="col-sm-9">
-            <input id="nosering" type="checkbox">
-            <label for="nosering">Nosering</label>
+            <label for="nosering"><input id="nosering" type="checkbox"><span class="glyphicon glyphicon-ok"></span> Nosering</label>
+            <label for="axe"><input id="axe" type="checkbox"><span class="glyphicon glyphicon-ok"></span> Axe</label>
+            <label for="facepaint"><input id="facepaint" type="checkbox"><span class="glyphicon glyphicon-ok"></span> Face Paint</label>
+            <label for="xlhorns"><input id="xlhorns" type="checkbox"><span class="glyphicon glyphicon-ok"></span> XL Horns</label>
         </div>
     </fieldset>
+
+    <fieldset class="row">
+        <legend class="col-sm-3">Currency</legend>
+        <div class="col-sm-9">
+            <input id="usd" name="currency" type="radio">
+            <label for="usd"><span class="glyphicon glyphicon-usd"></span> USD</label>
+
+            <input id="gbp" name="currency" type="radio">
+            <label for="gbp"><span class="glyphicon glyphicon-gbp"></span> GBP</label>
+
+            <input id="euro" name="currency" type="radio">
+            <label for="euro"><span class="glyphicon glyphicon-euro"></span> Euro</label>
+        </div>
+    </fieldset>
+
+    <fieldset class="row">
+        <legend class="col-sm-3">Payment Type</legend>
+        <div class="col-sm-3">
+          <select class="form-control" name="pay" id="card">
+            <option value="amex">Amex</option>
+            <option value="mc">Master Card</option>
+            <option value="visa">Visa</option>
+            <option value="discover">Discover</option>
+          </select>
+        </div>
+    </fieldset>
+
+    <fieldset class="row">
+        <legend class="col-sm-3">Custom Spell</legend>
+        <div class="col-sm-9">
+            <textarea name="spell" id="spelltext" class="form-control formcell" rows="4" placeholder="E.G. by the power of greyskull..."></textarea>
+        </div>
+    </fieldset>
+
     <fieldset class="row">
         <div class="col-sm-9 col-sm-offset-3">
         <button class="btn btn-primary" type="submit">Buy One</button>
         </div>
     </fieldset>
+</div>
 </div>
 
 </body>

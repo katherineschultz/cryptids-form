@@ -134,3 +134,62 @@ h3.tagline {
     color: white;
     font-size: 120px;
 }
+
+/* FORM */
+
+.payform {
+    background-color: rgba(225,255,255,.6);
+    padding-top: 30px;
+    text-transform: uppercase;
+}
+
+legend {
+    font-size: 1.1em;
+    font-weight: bold;
+}
+
+.formcell {
+    background-color: rgba(0,0,0,0);
+    text-transform: uppercase;
+    border: 1px dashed #aaa;
+    margin-bottom: 5px;
+}
+
+.formcell:focus {
+    background: white;
+}
+
+input[type=checkbox] {
+  display: none;
+}
+
+input[type=checkbox] + span {
+    opacity: 0;
+}
+
+input[type=checkbox]:checked + span {
+    opacity: 1;
+}
+
+.glyphicon-ok {
+    margin-left: 10px;
+}
+
+input[type=radio] {
+  display: none;
+}
+
+input[type=radio] + label {
+    padding: 0 5px;
+}
+
+input[type=radio]:checked + label {
+  background-color: white;
+  border-radius: 10px;
+  padding: 5px;
+  font-weight: bold;
+}
+
+button {
+    text-transform: uppercase;
+}
